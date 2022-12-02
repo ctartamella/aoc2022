@@ -2,6 +2,19 @@ namespace aoc22;
 
 public static class Day2
 {
+    // This is an interesting one.  You can define this more clearly mathematically.
+    // let R, P, S be unit vectors (1,0,0), (0,1,0), and (0,0,1) respectively.
+    // (for part 2, you can define L, W, D similarly)
+    //
+    // We define "transform matrices" that are precomputed to give the results
+    // of a given game (our move x their move => score) and for their move x desired outcome => our move.
+    //
+    // For Part A, the result is simply Them * ScoreTransform * Us^T.
+    // (^-1 meaning the "transform" of the vector, i.e. convert the column to a row, and vice versa)
+    //
+    // For Part B, Them x ScoreTransform x (Them x OutcomeTransform x Desired^T)^T
+    // I probably overthought this, and I didnt want to bring in Linear Algebra packages, so I did it below more simply.
+
     // Enums internally _are_ ints, so we can effectively map the char values to int for indices.
     private enum Them { A, B, C }
     private enum Us { X, Y, Z }
