@@ -12,7 +12,7 @@ public static class Day3
     
     static Day3()
     {
-        File = System.IO.File.ReadLines("3.txt");
+        File = System.IO.File.ReadLines("Input\\3.txt");
     }
 
     // Pretty straightforward.  Split the string in half then take the union.

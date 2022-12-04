@@ -6,7 +6,7 @@ public static class Day1
     
     static Day1()
     {
-        File = System.IO.File.ReadAllText("1.txt");
+        File = System.IO.File.ReadAllText("Input\\1.txt");
     }
     
     public static int PartA()
