@@ -29,7 +29,7 @@ public static class Day2
     
     static Day2()
     {
-        File = System.IO.File.ReadLines("2.txt");
+        File = System.IO.File.ReadLines("Input\\2.txt");
     }
     
     public static int PartA()
