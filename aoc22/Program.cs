@@ -12,4 +12,7 @@ var output3b = Day3.PartB();
 var output4a = Day4.PartA();
 var output4b = Day4.PartB();
 
+var output5a = Day5.PartA();
+var output5b = Day5.PartB();
+
 Console.WriteLine("Solutions Finished");
